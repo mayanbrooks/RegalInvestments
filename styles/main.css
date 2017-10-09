@@ -1,0 +1,102 @@
+body {
+  margin:0;
+
+}
+
+.my_container{
+  width: 100%;
+}
+
+.hero_image {
+    height: 1000px;
+    width: 100%;
+    background-image: url("../assets/house1.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+
+}
+/*.overlay{
+  background-color: black;
+  background-size: contain;
+  opacity: 0.60;
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+
+}*/
+
+/*.title_text_box{
+  opacity: 1.0;
+  position: absolute;
+  top: 8%;
+  text-align: center;*/
+
+  /*left: 25%;
+  right: 25%;*/
+  /*height: 450px;
+  width: 750px;*/
+
+/*}*/
+
+.title_text{
+  color: white;
+  /*background-color: #0B4BD1;*/
+  /*background-color: lightgrey;*/
+  font-size: 86px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.tagline_text{
+  color: white;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 55px;
+  text-align: center;
+}
+
+.input_style{
+  border: 2px solid lightgrey;
+  border-radius: 25px;
+  background-color: white;
+  color: lightgrey;
+
+
+}
+
+.input_size{
+  width: 50%;
+}
+
+.button_container{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+
+}
+
+.contact_button{
+  border: 2px solid white ;
+  background-color: lightgrey;
+  color: white;
+  height: 70px;
+  width: 300px;
+  border-radius: 25px;
+  margin: 0 auto;
+
+
+}
+
+.contact_text{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
