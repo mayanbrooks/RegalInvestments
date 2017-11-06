@@ -18,6 +18,8 @@
   </head>
   <body class="my_container">
 
+    <section>
+
         <header>
 
             <nav>
@@ -32,11 +34,11 @@
               <div>
                 <div class="mynav">
 
-                <a href="#" data-activates="mobile-demo" class="nav_pos button-collapse"><i class="material-icons mobile_menu_pos"> menu</i></a>
+                <a href="#" data-activates="mobile-demo" class="nav_pos button-collapse"><i class="material-icons mobile_menu_pos" style= "color:#B89D11"> menu</i></a>
                 <ul id="nav-mobile" data-activates="dropdown1" class="nav_pos nav-padding right hide-on-med-and-down">
-                  <li><a class="dropdown-button" href="#!" ></a></li>
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="contactus.html">CONTACT US</a></li>
+                  <li><a class="dropdown-button" href="#!" style="color:#B89D11"></a></li>
+                  <li><a href="index.html" style="color:#B89D11">HOME</a></li>
+                  <li><a href="contactus.html" style="color:#B89D11">CONTACT US</a></li>
                 </ul>
 
                 <ul class="side-nav" id="mobile-demo">
@@ -44,7 +46,6 @@
                   <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>
 
-        <!-- end collapsible nav -->
 
         <!-- dropdown content -->
                 <ul id="dropdown1" class=" nav_pos dropdown-content">
@@ -55,10 +56,14 @@
         <!-- end dropdown content -->
                 </div>
               </div>
+
+        <!-- end collapsible nav -->
             </div>
+
           </nav>
 
         </header>
+      </section>
 
         <h2> CONTACT US </h2>
 
@@ -66,16 +71,14 @@
         <div class="row">
         <div class="contact-col">
           <div class="contact-form">
-            <form action="http://formspree.io/info@regalinv.com"
+            <form action="https://formspree.io/info@regalinv.com"
                   method="POST" class="input-format">
                 <input type="text" name="first name" placeholder="First Name" class="input-format">
                 <input type="text" name="last name" placeholder="Last Name" class="input-format">
                 <input type="email" name="_replyto" placeholder="Email address ex. john.doe@domain.com" class='input-format'>
                 <textarea name="message" placeholder="Your message" class="message-format"></textarea>
                 <button type="submit">Send</button>
-                <p>
-                  Note: Sending an inquiry via this form does not establish an attorney-client relationship with The Law Office of Joan D. Clay, its employees, or associates.
-                </p>
+
             </form>
           </div>
         </div>
@@ -92,7 +95,8 @@
     </nav>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="main.js" ></script>
 </body>
