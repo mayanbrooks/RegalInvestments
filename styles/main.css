@@ -3,19 +3,24 @@ body {
 
 }
 
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
-
-.cf:after {
-    clear: both;
-}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 
 .my_container{
   width: 100%;
+}
+
+header {
+  min-height: 82px;
 }
 
 .mynav{
@@ -30,7 +35,7 @@ body {
   right:0;
 }
 
-@media only screen (max-width: 987px) {
+@media only screen and (max-width: 987px) {
   .mobile_menu_pos{
     position: absolute;
     top: 0;
@@ -39,14 +44,16 @@ body {
 }
 
 .row_1{
-   min-height: 800px;
+   /*min-height: 800px;*/
+   border-top: black 1px solid;
+
 }
 
 .overlay{
   background-color: black;
   float: left;
   width: 100%;
-  min-height: 800px;
+  height: 800px;
   opacity: .30;
 }
 
@@ -74,17 +81,18 @@ body {
 }
 
 .hero_image {
-    height: 800px;
+    min-height: 800px;
     width: 100%;
     background-image: url("../assets/house1.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    background-position: center center;
     margin: 0 auto;
     opacity: 1.0;
 }
 
 .title_text{
-  color: white;
+  color: #B89D11;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   position: absolute;
@@ -99,7 +107,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-style: bold;
-  padding-top: 250px;
+  /*padding-top: 250px;*/
   margin: 0 auto;
 }
 
@@ -107,12 +115,24 @@ body {
   color: white;
   font-style: italic;
   font-family: "Roboto", sans-serif;
-  font-size: 65px;
+  font-size: 120px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
+  margin-top: 135px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tagline_text{
+  font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tagline_text{
+  font-size: 45px;
+  }
 }
 
 .row_2{
@@ -172,8 +192,10 @@ h3{
 
 .contact_button{
   border: 2px solid white ;
-  background-color: #072E82;
-  color: white;
+  background-color: black;
+  /*background-color: #072E82;*/
+  color: #B89D11;
+  /*color: white;*/
   height: 70px;
   width: 300px;
   border-radius: 25px;
