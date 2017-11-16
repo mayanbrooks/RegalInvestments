@@ -1,7 +1,16 @@
 body {
   margin:0;
 
+
 }
+
+main {
+   flex: 1 0 auto;
+   min-height: 100%;
+
+
+ }
+
 
 .clearfix:after {
   visibility: hidden;
@@ -35,6 +44,10 @@ header {
   right:0;
 }
 
+a:hover{
+  background-color: yellow;
+}
+
 @media only screen and (max-width: 987px) {
   .mobile_menu_pos{
     position: absolute;
@@ -42,10 +55,13 @@ header {
     left: 0;
   }
 }
-
+section {
+  box-sizing: border-box;
+}
 .row_1{
-   /*min-height: 800px;*/
+   min-height: 250px;
    border-top: black 1px solid;
+   box-sizing: border-box;
 
 }
 
@@ -53,8 +69,95 @@ header {
   background-color: black;
   float: left;
   width: 100%;
-  height: 800px;
+  min-height: 250px;
   opacity: .30;
+  box-sizing: border-box;
+}
+
+.hero_image {
+    min-height: 250px;
+    width: 100%;
+    background-image: url("../assets/house1.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin: 0 auto;
+    opacity: 1.0;
+    box-sizing: border-box;
+    float: left;
+}
+
+@media only screen and (min-width: 300px){
+  .hero_image{
+    min-height: 300px;
+  }
+}
+
+@media only screen and (min-width:300px){
+  .overlay{
+    min-height: 300px;
+  }
+}
+
+
+@media only screen and (min-width: 400px){
+  .hero_image{
+    min-height: 400px;
+  }
+}
+
+@media only screen and (min-width:400px){
+  .overlay{
+    min-height: 400px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  .hero_image{
+    min-height: 700px;
+  }
+}
+
+@media only screen and (min-width:700px){
+  .overlay{
+    min-height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .hero_image{
+    min-height: 800px;
+  }
+}
+
+@media only screen and (min-width:1000px){
+  .overlay{
+    min-height: 800px;
+  }
+}
+
+@media only screen and (min-width: 1250px){
+  .hero_image{
+    min-height: 950px;
+  }
+}
+
+@media only screen and (min-width: 1250px){
+  .overlay{
+    min-height: 950px;
+  }
+}
+
+@media only screen and (min-width: 1800px){
+  .hero_image{
+    min-height: 1300px;
+  }
+}
+
+@media only screen and (min-width: 1800px){
+  .overlay{
+    min-height: 1300px;
+  }
 }
 
 .nav-wrapper{
@@ -71,24 +174,13 @@ header {
 .logo_pos{
   position: absolute;
   top: 50%;
-  left: 50%;
+  right:-10%;
   width: 140px;
   transform: translate(-50%, -50%);
 }
 
 .logo-size-top{
   display: block !important;
-}
-
-.hero_image {
-    min-height: 800px;
-    width: 100%;
-    background-image: url("../assets/house1.jpeg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    margin: 0 auto;
-    opacity: 1.0;
 }
 
 .title_text{
@@ -102,42 +194,286 @@ header {
   margin: 0;
 }
 
+@media only screen and (max-width: 330px){
+  .title_text{
+    font-size: 11px;
+  }
+}
 
 .title_text_box{
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: bold;
   /*padding-top: 250px;*/
   margin: 0 auto;
+  position: relative;
+  max-width: 600px;
+  max-height: 250px;
+  box-sizing: border-box;
+
 }
 
 .tagline_text{
   color: white;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
-  font-size: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
   position: absolute;
-  top: 30%;
+  margin: 0 auto;
+  /*top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 135px;
+  transform: translate(-50%,-50%);
+  margin-top: 120px;*/
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 300px){
   .tagline_text{
-  font-size: 80px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 50px;
+    font-size: 2.8rem;
+  }
+
+  h3{
+    font-size: 2.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 350px) {
+  .tagline_text{
+    font-size: 26px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+
+  }
+
+  h2{
+    padding-top: 50px;
+    font-size: 2.8rem;
+  }
+  h3{
+    font-size: 2.8rem;
+  }
+
+}
+
+
+@media only screen and (min-width: 375px) {
+  .tagline_text{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+  h2{
+    padding-top: 50px;
+    font-size: 2.8rem;
+  }
+
+  h3{
+    font-size: 2.8rem;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 400px) {
   .tagline_text{
-  font-size: 45px;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 150px;
+    font-size: 2.8rem;
+  }
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .tagline_text{
+    font-size: 40px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 150px;
+    font-size: 2.8rem;
+  }
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .tagline_text{
+    font-size: 45px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 150px;
+    font-size: 2.8rem;
+  }
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 750px){
+  .tagline_text{
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 450px;
+    font-size: 2.8rem;
+  }
+
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .tagline_text{
+  font-size: 72px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 570px;
+    font-size: 3.5rem;
+  }
+
+  h3{
+    font-size: 3.5rem;
+  }
+
+  .logo_pos{
+    position: absolute;
+    top: 50%;
+    left:10%;
+    width: 140px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 1270px){
+  h2{
+    padding-top:  730px;
+    font-size: 3.5rem;
+  }
+
+  h3{
+    font-size: 3.5rem;
+  }
+
+  .logo_pos{
+    position: absolute;
+    top: 50%;
+    left:10%;
+    width: 140px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .title_text_box{
+    max-width: 1000px;
+    max-height: 500px;
+  }
+
+  .tagline_text{
+  font-size: 86px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 850px;
+    font-size: 4.5rem;
+  }
+
+  h3{
+    font-size: 4.5rem;
+  }
+
+  .logo_pos{
+    position: absolute;
+    top: 50%;
+    left:10%;
+    width: 140px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .title_text_box{
+    max-width: 1000px;
+    max-height: 500px;
+  }
+
+  .tagline_text{
+  font-size: 100px;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 1100px;
+    font-size: 4.5rem;
+  }
+
+  h3{
+    font-size: 4.5rem;
+  }
+
+  .logo_pos{
+    position: absolute;
+    top: 50%;
+    left:10%;
+    width: 140px;
+    transform: translate(-50%, -50%);
   }
 }
 
 .row_2{
   background-color: white;
+  width: 100%;
   min-height: 250px;
+  box-sizing: border-box;
 
 }
 
@@ -145,6 +481,7 @@ h2 {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
+  /*padding-top: 150px;*/
 
 }
 
@@ -160,7 +497,7 @@ h3{
   text-align: center;
   margin-top: 80px;
   margin-bottom: 50px;
-  font-size: 40px;
+  /*font-size: 40px;*/
 }
 
 .col_img{
@@ -202,6 +539,20 @@ h3{
   margin: 0 auto;
 }
 
+.row_3{
+  min-height: 100%;
+}
+
+.contact_title{
+  margin-top: 60px;
+  margin-bottom: 45px;
+  font-size: 55px;
+  color: black;
+  text-align: center;
+
+
+}
+
 .contact_text{
   text-align: center;
   vertical-align: middle;
@@ -223,11 +574,19 @@ h3{
   text-align: center;
   max-width: 550px;
   max-height: 450px;
-  padding-bottom: 50px;
+  padding-bottom: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
+  border-color: black;
 }
 
 .input-format{
   border: 1px solid #1a237e;
   padding: 50px;
+}
+
+.copyright-center{
+  text-align: center;
+  color:  #B89D11;
 }
