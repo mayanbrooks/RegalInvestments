@@ -273,7 +273,7 @@ section {
   .tagline_text{
     font-size: 30px;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -311,7 +311,7 @@ section {
   .tagline_text{
     font-size: 40px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
@@ -330,6 +330,7 @@ section {
   .tagline_text{
     font-size: 45px;
     text-align: center;
+    padding-top: 16px;
     padding-left: 60px;
     padding-right: 60px;
     margin: 0 auto;
@@ -343,6 +344,45 @@ section {
     font-size: 2.8rem;
   }
 }
+
+@media only screen and (min-width: 732px) {
+  .tagline_text{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 150px;
+    font-size: 2.8rem;
+  }
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 736px) {
+  .tagline_text{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 63px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-top: 150px;
+    font-size: 2.8rem;
+  }
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
 
 @media only screen and (min-width: 750px){
   .tagline_text{
@@ -387,7 +427,7 @@ section {
   .logo_pos{
     position: absolute;
     top: 50%;
-    left:10%;
+    left:50%;
     width: 140px;
     transform: translate(-50%, -50%);
   }
@@ -581,6 +621,11 @@ h3{
   /*font-size: 40px;*/
 }
 
+.col_margin{
+  margin-top: 15px;
+  margin-bottom: 40px;
+
+}
 .col_img{
   text-align: center;
 }
