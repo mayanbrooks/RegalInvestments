@@ -412,13 +412,13 @@ section {
     font-size: 3.5rem;
   }
 
-  /*.logo_pos{
+  .logo_pos{
     position: absolute;
     top: 50%;
-    left:10%;
+    left:50%;
     width: 140px;
     transform: translate(-50%, -50%);
-  }*/
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -445,13 +445,14 @@ section {
     font-size: 4.5rem;
   }
 
-  /*.logo_pos{
+  .logo_pos{
     position: absolute;
     top: 50%;
-    left:10%;
+    left:50%;
     width: 140px;
     transform: translate(-50%, -50%);
-  }*/
+  }
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -481,7 +482,7 @@ section {
   .logo_pos{
     position: absolute;
     top: 50%;
-    left:10%;
+    left:50%;
     width: 140px;
     transform: translate(-50%, -50%);
   }
@@ -515,7 +516,7 @@ section {
   .logo_pos{
     position: absolute;
     top: 50%;
-    left:10%;
+    left:50%;
     width: 140px;
     transform: translate(-50%, -50%);
   }
