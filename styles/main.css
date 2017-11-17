@@ -421,6 +421,34 @@ section {
   }
 }
 
+@media only screen and (min-width: 1350px){
+  .tagline_text{
+  font-size: 72px;
+  text-align: center;
+  padding-top: 75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  }
+
+  h2{
+    padding-top:  730px;
+    font-size: 3.5rem;
+  }
+
+  h3{
+    font-size: 3.5rem;
+  }
+
+  .logo_pos{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 140px;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .tagline_text{
   font-size: 76px;
